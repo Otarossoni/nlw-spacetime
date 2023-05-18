@@ -1,7 +1,7 @@
 {
   "name": "api-nlw-spacetime",
   "version": "1.0.0",
-  "description": "",
+  "description": "API do projeto",
   "main": "src/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
