@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "75bbd8bf-7961-43dd-af0e-2e6fceb37ed6",
+		"name": "NLW Spacetime",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23087467"
+	},
+	"item": [
+		{
+			"name": "Memory",
+			"item": [
+				{
+					"name": "Find Memories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiT3TDoXZpbyBNb250ZWlybyBSb3Nzb25pIiwiYXZhdGFyVXJsIjoiaHR0cHM6Ly9hdmF0YXJzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91LzExMjk1NTEyNz92PTQiLCJzdWIiOiI2MWQ4NGQ0MC04NTFkLTQ5MzgtYmM0NC1kMjA0NzEzZjBmNTQiLCJpYXQiOjE2ODQ4NDg5MjAsImV4cCI6MTY4NzQ0MDkyMH0.a7WQXAPEoQYYWgTkD_L_O0eXk0F8lDi9BhQ1KkG-TS4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/memories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"memories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Specific Memory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3333/memories/25bca459-f3e6-40a8-bfa4-c169951c164e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"memories",
+								"25bca459-f3e6-40a8-bfa4-c169951c164e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Memory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"memória teste\",\r\n    \"coverUrl\": \"123\",\r\n    \"isPublic\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/memories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"memories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Memory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"memória teste1\",\r\n    \"coverUrl\": \"123\",\r\n    \"isPublic\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/memories/eb56df92-69b0-4229-b94d-5e504c6217b1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"memories",
+								"eb56df92-69b0-4229-b94d-5e504c6217b1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Memory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"memória teste1\",\r\n    \"coverUrl\": \"123\",\r\n    \"isPublic\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/memories/eb56df92-69b0-4229-b94d-5e504c6217b1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"memories",
+								"eb56df92-69b0-4229-b94d-5e504c6217b1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Github Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\": \"bddf6e51b85037780b1e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3333/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Upload",
+			"item": [
+				{
+					"name": "Upload Image or Video",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"type": "file",
+									"src": "/C:/Users/otaro/Downloads/win_xp.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3333/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3333",
+							"path": [
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
