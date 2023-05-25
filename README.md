@@ -8,6 +8,7 @@ Abaixo é possível encontrar instruções de como obter uma cópia do projeto p
 Para implementar e testar o projeto localmente é necessário:  
 * [NodeJS](https://nodejs.org/en) v16.17.0 ou superior.
 * [Postman](https://www.postman.com/)
+* [Projeto Figma](https://www.figma.com/file/euyGriL6hTEOiVsNWbDZ1v/C%C3%A1psula-do-tempo-%E2%80%A2-Trilha-Ignite-(Community)?type=design&node-id=205-3&t=Zg5vBizoiEEbs2h2-0)
 
 Entre na raiz de cada uma das pastas a seguir e rode os comandos correspondentes para instalação das dependências:
 
